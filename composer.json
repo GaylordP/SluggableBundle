@@ -1,4 +1,5 @@
 {
+    "name": "gaylordp/sluggable-bundle",
     "type": "symfony-bundle",
     "license": "proprietary",
     "authors": [
