@@ -1,0 +1,12 @@
+services:
+    GaylordP\SluggableBundle\EventListener\SluggableListener:
+        arguments:
+            - '@annotation_reader'
+            - '@property_accessor'
+        tags:
+            -
+                name: 'doctrine.event_listener'
+                event: 'prePersist'
+            -
+                name: 'doctrine.event_listener'
+                event: 'preUpdate'
